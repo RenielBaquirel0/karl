@@ -1,0 +1,131 @@
+/* Existing styles remain unchanged */
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: black;
+    padding: 20px;
+}
+
+header {
+    margin-top: -20px;
+    position: fixed;
+    width: 100%;
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    align-items: center; 
+}
+
+header img {
+    margin-left: 10px;
+}
+
+#navbar {
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 20px;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background-color: green;
+    margin: 10px 0;
+}
+
+.card {
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card-info {
+    margin-top: 100px; /* Adjust if needed */
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.logout {
+    text-decoration: none;
+    margin-left: auto; /* Adjusted for better alignment */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px; /* More padding for mobile */
+        margin-top: -10px; /* Adjust if needed */
+        border-bottom-width: thin; /* Optional for visual separation */
+        border-bottom-style: solid; /* Optional for visual separation */
+        border-bottom-color: white; /* Optional for visual separation */
+    }
+
+    #navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding-left: 0; /* Remove left padding */
+        font-size: 16px; /* Smaller font size for mobile */
+        align-items: flex-start; /* Align items to the left */
+        margin-top: 10px; /* Space between header and navbar */
+    }
+
+    #navbar a {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add space between links */
+        width: 100%; /* Make links full width */
+        text-align: left; /* Align text to the left */
+        padding-left: 15px; /* Padding for better touch target */
+        padding-right: 15px; /* Padding for better touch target */
+    }
+
+    .card-info {
+        width: auto; /* Allow card to take full width on mobile */
+        margin-top: 20px; /* Adjust top margin as needed */
+        padding-left: 15px; /* Add some left padding for aesthetics */
+        padding-right: 15px; /* Add some right padding for aesthetics */
+        box-shadow:none; /* Remove shadow on mobile if desired */
+        
+     }
+     
+     .separator {
+         height :1px ;/* Reduce height of separator on mobile*/
+         margin :5px ;/* Adjust margins as needed*/
+     }
+
+     .section {
+         padding-left :10px ;/* Add some left padding in sections*/
+         padding-right :10px ;/* Add some right padding in sections*/
+     }
+
+     .logout {
+         margin-left :0 ;/* Remove left margin on logout button*/
+         width :100%;/* Make logout button full width*/
+         text-align:center ;/* Center align logout button text*/
+         padding :10px ;/* Add some padding around logout button*/
+         font-size :18px ;/* Adjust font size if needed*/
+     }
+}
